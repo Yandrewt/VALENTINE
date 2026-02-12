@@ -33,7 +33,8 @@ function openArms() {
 // Clic YES
 yesBtn.addEventListener("click", () => {
   openArms();
-  loveText.style.display = "block";
+  // afficher le message d'amour (container utilise flex)
+  loveText.style.display = "flex";
   createHearts();
 });
 
@@ -43,6 +44,7 @@ function createHearts() {
   for (let i = 0; i < 40; i++) {
     const heart = document.createElement("div");
     heart.innerHTML = "❤️";
+    innerHeight = 75%;
     heart.style.position = "absolute";
     heart.style.left = Math.random() * window.innerWidth + "px";
     heart.style.top = window.innerHeight + "px";
