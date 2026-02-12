@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #b11226;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 20px;
+}
+
+#loveText {
+  display: none;
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+#yes {
+  font-size: 36px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yes:hover {
+  transform: scale(1.1);
+}
+
+#no {
+  font-size: 16px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.2s;
+}
