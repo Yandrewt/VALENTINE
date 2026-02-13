@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   background: #b11226;
   display: flex;
   justify-content: center;
@@ -12,12 +12,7 @@ body {
 }
 
 .container {
-  /* centre la colonne et ses éléments */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
+  position: relative;
 }
 
 h1 {
@@ -26,8 +21,7 @@ h1 {
 }
 
 #loveText {
-  display: none;          /* caché jusqu'au clic sur YES */
-  justify-content: center;
+  display: none;
   margin-top: 30px;
   font-size: 36px;
 }

@@ -3,7 +3,8 @@ const yesBtn = document.getElementById("yes");
 const loveText = document.getElementById("loveText");
 
 let noScale = 1;
-let yesScale = 1;
+
+// Bouton NO qui fuit + rétrécit
 noBtn.addEventListener("mouseover", () => {
 
   // Il fuit
@@ -16,12 +17,8 @@ noBtn.addEventListener("mouseover", () => {
   noScale -= 0.1;
   if (noScale < 0.3) noScale = 0.3;
   noBtn.style.transform = `scale(${noScale})`;
-
-  // YES GROSSIT
-  yesScale += 0.1;
-  if (yesScale > 2.5) yesScale = 2.5;
-  yesBtn.style.transform = `scale(${yesScale})`;
 });
+
 
 // Animation bras ouverts
 function openArms() {
@@ -33,8 +30,7 @@ function openArms() {
 // Clic YES
 yesBtn.addEventListener("click", () => {
   openArms();
-  // afficher le message d'amour (container utilise flex)
-  loveText.style.display = "flex";
+  loveText.style.display = "block";
   createHearts();
 });
 
@@ -44,7 +40,6 @@ function createHearts() {
   for (let i = 0; i < 40; i++) {
     const heart = document.createElement("div");
     heart.innerHTML = "❤️";
-    innerHeight = 75%;
     heart.style.position = "absolute";
     heart.style.left = Math.random() * window.innerWidth + "px";
     heart.style.top = window.innerHeight + "px";

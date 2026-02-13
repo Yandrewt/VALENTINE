@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>❤️ Valentine ❤️</title>
+
+  <!-- Police élégante -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Personnage minimaliste -->
+  <div class="container">
+
+    <!-- Personnage -->
     <svg id="character" width="200" height="260" viewBox="0 0 200 260">
-        <!-- Corps -->
-        <rect x="60" y="60" width="80" height="120" rx="40" fill="white" stroke="black" stroke-width="4" />
+      <!-- Corps -->
+      <rect x="60" y="60" width="80" height="120" rx="40" fill="white" stroke="black" stroke-width="4" />
 
-        <!-- Tête -->
-        <circle cx="100" cy="40" r="25" fill="white" stroke="black" stroke-width="4" />
+      <!-- Tête -->
+      <circle cx="100" cy="40" r="25" fill="white" stroke="black" stroke-width="4" />
 
-        <!-- Yeux -->
-        <circle cx="92" cy="38" r="3" fill="black" />
-        <circle cx="108" cy="38" r="3" fill="black" />
+      <!-- Yeux -->
+      <circle cx="92" cy="38" r="3" fill="black" />
+      <circle cx="108" cy="38" r="3" fill="black" />
 
-        <!-- Sourire -->
-        <path d="M90 48 Q100 55 110 48" stroke="black" stroke-width="3" fill="none" />
+      <!-- Sourire -->
+      <path d="M90 48 Q100 55 110 48" stroke="black" stroke-width="3" fill="none" />
 
-        <!-- Bras -->
-        <line id="armLeft" x1="60" y1="90" x2="20" y2="120" stroke="black" stroke-width="6" stroke-linecap="round" />
-        <line id="armRight" x1="140" y1="90" x2="180" y2="120" stroke="black" stroke-width="6" stroke-linecap="round" />
+      <!-- Bras -->
+      <line id="armLeft" x1="60" y1="90" x2="40" y2="120" stroke="black" stroke-width="6" stroke-linecap="round" />
+      <line id="armRight" x1="140" y1="90" x2="160" y2="120" stroke="black" stroke-width="6" stroke-linecap="round" />
     </svg>
 
-    <h1>would you be my Valentine ?</h1>
+    <h1>Will you be my Valentine ?</h1>
 
     <div class="buttons">
-        <button id="yes">YES ❤️</button>
-        <button id="no">no</button>
+      <button id="yes">YES ❤️</button>
+      <button id="no">no</button>
     </div>
 
     <h2 id="loveText">I love you this much 💕</h2>
 
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
